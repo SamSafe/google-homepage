@@ -5,26 +5,34 @@
             The Google Home Page
         </title>
         <style>
-            .left-header {
-                align
+            .header {
+                display: grid;
+            }
+            .footer {
+                display: grid;
+            }
+            #logo {
+                text-align: center;
+            }
+            .buttons {
+                text-align: center;
+            }
+            #search-bar {
+                text-align: center;
             }
         </style>
     </head>
 
     <body>
         <header>
-            <div class="left-header">
+            <div class="header">
                 <ul>
-                    <a href="about">About</a>
-                    <a href="store">Store</a>
-                </ul>
-            </div>
-            <div class="right-header">
-                <ul>
-                    <a href="gmail">Gmail</a>
-                    <a href="images">Images</a>
-                    <a href="app-logo">apps</a>
-                    <a href="profile-logo">profile</a>
+                    <li><a href="about">About</a></li>
+                    <li><a href="store">Store</a></li>
+                    <li><a href="gmail">Gmail</a></li>
+                    <li><a href="images">Images</a></li>
+                    <li><a href="app-logo">apps</a></li>
+                    <li><a href="profile-logo">profile</a></li>
                 </ul>
             </div>
         </header>
@@ -45,20 +53,16 @@
             </button>
         </div>
         <footer>
-            <div class="top-footer">
-                <a href="country">Canada</a>
-            </div>
-            <div class="bottom-footer">
-                <div class="left-bottom-footer">
-                    <a href="advertising">Advertising</a>
-                    <a href="business">Business</a>
-                    <a href="how">How search works</a>
-                </div>
-                <div class="right-bottom-footer">
-                    <a href="privacy">Privacy</a>
-                    <a href="terms">Terms</a>
-                    <a href="settings">Settings</a>
-                </div>
+            <div class="footer">
+                <ul>
+                    <li><a href="country">Canada</a></li>
+                    <li><a href="advertising">Advertising</a></li>
+                    <li><a href="business">Business</a></li>
+                    <li><a href="how">How search works</a></li>
+                    <li><a href="privacy">Privacy</a></li>
+                    <li><a href="terms">Terms</a></li>
+                    <li><a href="settings">Settings</a></li>
+                </ul>
             </div>
         </footer>
     </body>
