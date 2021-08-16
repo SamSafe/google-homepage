@@ -1,0 +1,1 @@
+This is an introductory project to build the google.com landing page in order to learn basic HTML and CSS 
