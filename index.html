@@ -5,22 +5,23 @@
             Google
         </title>
         <style>
-            body {
-                height: auto;
-                width: auto;
-            }
+            /*body, html {
+                height: 95%; 
+            }*/
+
             .header {
-                margin: 20px auto;
+                margin: 0 auto;
                 list-style-type: none;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 14px;
-                padding-bottom: 50px;
-                margin-left: -30px;
-                margin-right: 10px;
+                padding-bottom: 80px;
+                padding-left: 15px;
+                padding-top: 15px;
+                padding-right: 5px;
             }
             .header a {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
                 text-decoration: none;
-                color: black;
+                color: #222;
             }
             .header-left {
                 float: left;
@@ -28,12 +29,57 @@
             }
             .header-right {
                 float: right;
-                margin-left: 20px;
+                margin-left: 15px;
+            }
+            .header-right a {
+                font-size: 13px;
             }
             .header li:hover {
                 cursor: pointer;
                 text-decoration: underline;
             }
+
+            .logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .logo:hover {
+                cursor: pointer;
+            }
+
+            .search-bar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .search-bar:hover {
+                border-radius: 500px;
+            }
+
+            .buttons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding-top: 50px;
+            }
+
+            .footer {
+                margin: 0 auto;
+                list-style-type: none;
+                position: absolute;
+                bottom: 20px;
+                display: flex;
+                flex-direction: row;
+            }
+            .footer a {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                text-decoration: none;
+                color: #222;
+                padding: 20px;
+            }
+
         </style>
     </head>
 
@@ -50,10 +96,10 @@
                 </ul>
             </nav>
         </header>
-        <div id="logo">
+        <div class="logo">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="image of the google logo">
         </div>
-        <div id="search-bar">
+        <div class="search-bar">
             <form>
                 <input type="search">
             </form>
