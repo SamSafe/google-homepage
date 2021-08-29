@@ -44,19 +44,10 @@ body, html {
     cursor: pointer;
 }
 
-.glass {
-    z-index: 2;
-    border: none;
-}
-.mic {
-    z-index: 2;
-    border: none;
-}
-
 .search-bar {
     display: flex;
     flex-direction: row;
-    text-align: center;
+    justify-content: stretch;
     max-width: 584px;
     border-color: rgb(133,133,133);
     border: 1px solid #dfe1e5;
@@ -64,15 +55,31 @@ body, html {
     font-size: 16px;
     border-radius: 24px;
     margin: 0 auto;
-    width: 95%;
+    width: 90%;
 }
 #google {
-    width: 85%;
-    border: none;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    flex: 100%;
+    /*border: none;*/
     height: 44px;
     outline-width: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    margin: 0 5px;
+}
+.glass {
+    padding-top: 10px;
+    padding-left: 15px;
+    z-index: 2;
+    border: none;
+}
+.mic {
+    padding-top: 10px;
+    padding-right: 15px;
+    z-index: 2;
+    border: none;
 }
 .search-bar:hover {
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
@@ -80,15 +87,12 @@ body, html {
 .mic:hover {
     cursor: pointer;
 }
-.glass:hover {
-    cursor: pointer;
-}
 
 .buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 #search {
     color: #3c4043;
@@ -122,7 +126,8 @@ body, html {
 .footer {
     margin: 0 auto;
     list-style-type: none;
-    position:static;
+    position: relative;
+    bottom: 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -130,6 +135,12 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
+    width: 100%;
+}
+@media (max-width: 1200px) {
+    .footer {
+        justify-content: space-evenly;
+    }
 }
 .footer a {
     font-family: Arial, Helvetica, sans-serif;
@@ -149,10 +160,10 @@ body, html {
 .footer-left {
     padding: 15px 30px;
     font-size: 14px;
-    justify-items: left;
+    float: left;
 }
 .footer-right {
     padding: 15px 30px;
     font-size: 14px;
-    justify-items: right;
+    float: right;
 }
