@@ -43,6 +43,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin-bottom: 40px;
             }
             .logo:hover {
                 cursor: pointer;
@@ -53,8 +54,18 @@
                 flex-direction: column;
                 align-items: center;
             }
-            .search-bar:hover {
-                border-radius: 500px;
+            #google {
+                width: auto;
+                max-width: 584px;
+                border-color: rgb(133,133,133);
+                border-width: 1px;
+                margin-top: -37px;
+                height: 34px;
+                font-size: 16px;
+                border-radius: 50px;
+            }
+            #google:hover {
+                box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
             }
 
             .buttons {
@@ -129,7 +140,7 @@
         </div>
         <div class="search-bar">
             <form>
-                <input type="search">
+                <input type="search" id="google">
             </form>
         </div>
         <div class="buttons">
