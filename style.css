@@ -1,6 +1,8 @@
-/*body, html {
+body, html {
     height: 95%; 
-}*/
+    margin: 0;
+    padding: 0;
+}
 
 .header {
     margin: 0 auto;
@@ -43,14 +45,10 @@
 }
 
 .glass {
-    position: absolute;
-    top: 39.25%;
     z-index: 2;
     border: none;
 }
 .mic {
-    position: absolute;
-    top: 39.25%;
     z-index: 2;
     border: none;
 }
@@ -124,15 +122,37 @@
 .footer {
     margin: 0 auto;
     list-style-type: none;
-    position: absolute;
-    bottom: 20px;
+    position:static;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
 }
 .footer a {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
     text-decoration: none;
-    color: #222;
-    padding: 20px;
+    color: #70757a;
+}
+.footer a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#country {
+    width: 100%;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(0,0,0,.24);
+    padding: 15px 30px;
+}
+.footer-left {
+    padding: 15px 30px;
+    font-size: 14px;
+    justify-items: left;
+}
+.footer-right {
+    padding: 15px 30px;
+    font-size: 14px;
+    justify-items: right;
 }
