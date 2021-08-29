@@ -4,122 +4,7 @@
         <title>
             Google
         </title>
-        <style>
-            /*body, html {
-                height: 95%; 
-            }*/
-
-            .header {
-                margin: 0 auto;
-                list-style-type: none;
-                padding-bottom: 80px;
-                padding-left: 15px;
-                padding-top: 15px;
-                padding-right: 5px;
-            }
-            .header a {
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 14px;
-                text-decoration: none;
-                color: #222;
-            }
-            .header-left {
-                float: left;
-                margin-right: 20px;
-            }
-            .header-right {
-                float: right;
-                margin-left: 15px;
-            }
-            .header-right a {
-                font-size: 13px;
-            }
-            .header li:hover {
-                cursor: pointer;
-                text-decoration: underline;
-            }
-
-            .logo {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-bottom: 45px;
-            }
-            .logo:hover {
-                cursor: pointer;
-            }
-
-            .search-bar {
-                display: block;
-                text-align: center;
-            }
-            #google {
-                width: 50%;
-                max-width: 584px;
-                border-color: rgb(133,133,133);
-                border: 1px solid #dfe1e5;
-                height: 44px;
-                font-size: 16px;
-                border-radius: 24px;
-                margin: 0 auto;
-                width: 100%;
-            }
-            #google:hover {
-                box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
-            }
-
-            .buttons {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                padding-top: 50px;
-            }
-            #search {
-                color: #3c4043;
-                background-color: #f8f9fa;
-                border: 1px solid #f8f9fa;
-                font-size: 14px;
-                border-radius: 4px;
-                margin: 11px 4px;
-                padding: 0 16px;
-                line-height: 27px;
-                height: 36px;
-                min-width: 54px;
-                text-align: center;
-                cursor: pointer;
-            }
-            #lucky {
-                color: #3c4043;
-                background-color: #f8f9fa;
-                border: 1px solid #f8f9fa;
-                font-size: 14px;
-                border-radius: 4px;
-                margin: 11px 4px;
-                padding: 0 16px;
-                line-height: 27px;
-                height: 36px;
-                min-width: 54px;
-                text-align: center;
-                cursor: pointer;
-            }
-
-            .footer {
-                margin: 0 auto;
-                list-style-type: none;
-                position: absolute;
-                bottom: 20px;
-                display: flex;
-                flex-direction: row;
-            }
-            .footer a {
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 14px;
-                text-decoration: none;
-                color: #222;
-                padding: 20px;
-            }
-
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -139,6 +24,12 @@
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="image of the google logo">
         </div>
         <div class="search-bar">
+            <div class="glass">
+                <img src="mag_glass.svg">
+            </div>
+            <div class="mic">
+                <img src="mic.svg">
+            </div>
             <form>
                 <input type="search" id="google">
             </form>
